@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-site",
+  "version": "1.0.0",
+  "description": "A first start at creating real world website, a nice and clean restaurant webpage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorePog/restaurant-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorePog/restaurant-site/issues"
+  },
+  "homepage": "https://github.com/MorePog/restaurant-site#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
