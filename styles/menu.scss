@@ -1,0 +1,78 @@
+#menu {
+  margin: 0 30px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#menuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 50em;
+  height: auto;
+  gap: 1em;
+  margin: 1em;
+}
+#menuTitle {
+    font-weight: 800;
+    font-size: 3em;
+    margin: 1em;
+    height: 1em;
+    min-width: 8em;
+}
+
+.menuItem {
+    color: #f7c4bc;
+    margin-bottom: 1em;
+  height: 15em;
+  width: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.3em;
+top: 0;
+background: #333333;
+  box-shadow: #00000042 0px 0px 5px;
+  transition: 0.2s;
+  &:hover {
+      box-shadow: rgba(0, 0, 0, 0.568) 0px 0px 10px;
+      
+  }
+
+  .itemDescription {
+      display: flex;
+      flex-direction: column;
+      padding: 0em 1em;
+      gap: 0.1em;
+      text-align: center;
+      align-items: center;
+  }
+  .itemImage {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dishImg {
+    filter: drop-shadow(0px 0px 5px #8b8b8b54);
+
+      width: 8em;
+      transition: 0.2s;
+      &:hover {
+          width: 10em;
+      }
+  }
+
+  .itemName{
+      font-weight: 400;
+  }
+  .itemPrice {
+      font-weight: 200;
+  }
+}

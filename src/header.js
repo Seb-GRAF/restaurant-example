@@ -1,3 +1,6 @@
+import { createDiv, createImg, createBtn } from "./module";
+import "../styles/header.scss";
+
 function createHeader() {
   const content = document.querySelector("#content");
   const header = document.createElement("header");
@@ -7,10 +10,10 @@ function createHeader() {
   header.appendChild(createDiv("", "right"));
 
   left.appendChild(createLogo());
-  right.appendChild(creatBtn("Home", "homeBtn", "headerBtn"));
-  right.appendChild(creatBtn("Menu", "menuBtn", "headerBtn"));
-  right.appendChild(creatBtn("Our Story", "ctcBtn", "headerBtn"));
-  right.appendChild(creatBtn("Contact Us", "abtBtn", "headerBtn"));
+  right.appendChild(createBtn("Home", "homeBtn", "headerBtn"));
+  right.appendChild(createBtn("Menu", "menuBtn", "headerBtn"));
+  right.appendChild(createBtn("Our Story", "ctcBtn", "headerBtn"));
+  right.appendChild(createBtn("Contact Us", "abtBtn", "headerBtn"));
 
 //   logo.addEventListener("mouseenter", () => {
 //       document.getElementById("logoText1").textContent = "GI";
@@ -35,19 +38,4 @@ function createLogo() {
   return logo;
 }
 
-function creatBtn(btnName, btnId, btnClass) {
-  const btn = document.createElement("button");
-  btn.setAttribute("id", btnId);
-  btn.textContent = btnName;
-  if (btnClass !== "") btn.classList.add(btnClass);
-  return btn;
-}
-
-function createDiv(divName, divId, divClass) {
-  const div = document.createElement("div");
-  div.setAttribute("id", divId);
-  div.textContent = divName;
-  if (divClass !== "") div.classList.add(divClass);
-  return div;
-}
 export default createHeader;

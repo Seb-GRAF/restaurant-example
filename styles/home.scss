@@ -1,0 +1,50 @@
+#home {
+    margin: 0 30px;
+    max-width: 90em;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(-120%, 0%);
+  }
+  #homeLeft {
+    min-width: 5em;
+    max-width: 30em;
+  }
+  #homeRight {
+    max-width: 30em;
+    min-width: 20em;
+    display: flex;
+    flex: 0 1 auto;
+  }
+  .homeImg {
+    max-width: 100%;
+    filter: drop-shadow(0px 7px 5px rgba(34, 34, 34, 0.596));
+    transition: 1s;
+    &:hover {
+      filter: drop-shadow(0px 7px 7px #000000af);
+    }
+  }
+  
+  #homeTitle {
+    font-size: 3em;
+    color: #ec3b1f;
+    text-decoration: underline 2px 2px;
+    margin: 0;
+  }
+  #homeTitle2,
+  #separator {
+    margin-bottom: 0px;
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  #separator {
+    margin: 0;
+    height: 30px;
+    line-height: 0px;
+  }
+  #homeTxt1 {
+    line-height: 1.4em;
+    font-weight: 100;
+  }
