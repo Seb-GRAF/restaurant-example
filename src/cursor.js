@@ -1,5 +1,4 @@
 function createCursor() {
-    const body = document.querySelector("body")
     const cursor = document.createElement("div")
     cursor.setAttribute("id", "cursor")
     return cursor

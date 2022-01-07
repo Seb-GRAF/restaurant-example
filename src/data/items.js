@@ -14,7 +14,7 @@ function createDish(image, name, price) {
 createDish(
   require("./itemsImg/nigiri-unagi.png"),
   "Unagi Nigiri (eel)",
-  "2CHF/p"
+  "2.5CHF/p"
 );
 
 createDish(

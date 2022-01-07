@@ -1,27 +1,50 @@
+@font-face {
+  font-family: "modernist";
+  src: url("./Sk-Modernist/Sk-Modernist-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modernist mono";
+  src: url("./Sk-Modernist/Sk-Modernist-Mono.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modernist bold";
+  src: url("./Sk-Modernist/Sk-Modernist-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "modernist", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 body {
   color: #000000;
-  background-color: #f1e8d7;
+  background-color: #fcf6ed;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 100%;
   height: 100vh;
-//   overflow-x: hidden;
-//   cursor: none;
+  overflow-x: hidden;
+  cursor: none;
 }
-// #cursor {
-//   width: 15px;
-//   height: 15px;
-//   background-color: #ffffff;
-//   position: absolute;
-//   border-radius: 50%;
-//   transform: translate(-50%, -50%);
-//   pointer-events: none;
-//   mix-blend-mode: difference;
-// }
+#cursor {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
 #content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
 }

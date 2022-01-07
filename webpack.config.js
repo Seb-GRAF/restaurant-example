@@ -13,6 +13,10 @@ module.exports = {
         test: /\.(png|jpg)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.(eot|ttf|woff|woff2|otf)$/i,
+        type: "asset/resource",
+      },
     ],
   },
   output: {

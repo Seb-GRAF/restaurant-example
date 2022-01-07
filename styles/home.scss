@@ -1,50 +1,132 @@
 #home {
-    margin: 0 30px;
-    max-width: 90em;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translate(-120%, 0%);
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#home1 {
+  width: 100%;
+  min-height: 25em;
+  display: flex;
+  background-attachment: fixed;
+  background-position: center -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home2 {
+  margin-top: 3em;
+  max-width: 90em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
   #homeLeft {
+    height: 20em;
     min-width: 5em;
     max-width: 30em;
-  }
-  #homeRight {
-    max-width: 30em;
-    min-width: 20em;
     display: flex;
-    flex: 0 1 auto;
-  }
-  .homeImg {
-    max-width: 100%;
-    filter: drop-shadow(0px 7px 5px rgba(34, 34, 34, 0.596));
-    transition: 1s;
-    &:hover {
-      filter: drop-shadow(0px 7px 7px #000000af);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    #homeTitle {
+      font-size: 4em;
+      color: #ec3b1f;
+      font-family: "modernist bold";
+    }
+    #homeTitle2,
+    #separator {
+      margin-bottom: 0px;
+      font-size: 4em;
+      font-family: "modernist bold";
+    }
+    #separator {
+      margin: 0;
+      height: 40px;
+      line-height: 0;
+    }
+    #homeTxt1 {
+      margin-top: 1em;
+      line-height: 1.4em;
     }
   }
-  
-  #homeTitle {
-    font-size: 3em;
-    color: #ec3b1f;
-    text-decoration: underline 2px 2px;
-    margin: 0;
+  #homeRight {
+    height: 20em;
+    max-width: 30em;
+    min-width: 20em;
+    flex: 1 1 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .homeImg {
+      max-width: 100%;
+      filter: drop-shadow(0px 7px 5px rgba(34, 34, 34, 0.596));
+    }
   }
-  #homeTitle2,
-  #separator {
-    margin-bottom: 0px;
-    font-size: 3em;
-    font-weight: bolder;
+}
+
+#home5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20em;
+  margin: 8em 0;
+  #home5Images {
+      max-width: 70em;
+      min-width: 20em;
+      display: flex;
+    //   flex-wrap: wrap;
+    //   gap: 2em;
+      flex: 1 1 auto;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  #sushi-plate,
+  #sushi-chef {
+      margin: 0 2em;
+      display: flex;
+      width: 30em;
+    //   flex: 1 1 ;
+      border-radius: 0.3em;
+    box-shadow: black 0px 0px 10px;
+    transition: 0.5s;
+    &:hover {
+        width: 40em;
+    }
   }
-  #separator {
-    margin: 0;
-    height: 30px;
-    line-height: 0px;
+}
+#home3 {
+  font-family: "modernist bold";
+  font-size: 3em;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.397) 0px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home4 {
+  width: 100%;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #map {
+    border-style: none;
+    height: 20em;
+    width: 70em;
+    margin: 0 4em;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.288) 0px 0px 10px;
   }
-  #homeTxt1 {
-    line-height: 1.4em;
-    font-weight: 100;
-  }
+}
