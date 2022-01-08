@@ -25,7 +25,7 @@ function createStory() {
   
   story.appendChild(createDiv("", "story2", ""));
   story2.appendChild(createDiv("", "content2Image", ""));
-  content2Image.style.backgroundImage = `url(${require("./assets/restaurant-img2.jpg")})`;
+  content2Image.appendChild(createImg("img2", "", require("./assets/restaurant-img2.jpg")))
   
   story2.appendChild(createDiv("", "content2Main", ""));
   content2Main.appendChild(createDiv("", "content2Title", "contentTitle"));

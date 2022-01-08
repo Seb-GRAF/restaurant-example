@@ -13,16 +13,7 @@ function createHeader() {
   right.appendChild(createBtn("Home", "homeBtn", "headerBtn"));
   right.appendChild(createBtn("Menu", "menuBtn", "headerBtn"));
   right.appendChild(createBtn("Our Story", "storyBtn", "headerBtn"));
-  right.appendChild(createBtn("Contact Us", "ctcBtn", "headerBtn"));
-
-//   logo.addEventListener("mouseenter", () => {
-//       document.getElementById("logoText1").textContent = "GI";
-//       document.getElementById("logoText2").textContent = "RI";
-//   });
-//   logo.addEventListener("mouseleave", () => {
-//     document.getElementById("logoText1").textContent = "YU";
-//     document.getElementById("logoText2").textContent = "MI";
-//   });
+  right.appendChild(createBtn("Contact", "ctcBtn", "headerBtn"));
 }
 
 function createLogo() {
