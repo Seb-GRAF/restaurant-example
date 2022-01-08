@@ -3,6 +3,8 @@ import createHeader from "./header";
 import { createCursor, cursorHover } from "./cursor";
 import { createHome, wipeHome } from "./home";
 import { createMenu } from "./menu";
+import { createStory } from "./story";
+import { createContact } from "./contact";
 import { createFooter } from "./footer";
 
 createHeader();
@@ -15,16 +17,31 @@ function clearPage() {
   content.removeChild(content.lastChild);
 }
 
+const homeBtn = document.getElementById("homeBtn");
+homeBtn.addEventListener("click", () => {
+  clearPage();
+  createHome();
+  createFooter();
+});
+
 const menuBtn = document.getElementById("menuBtn");
 menuBtn.addEventListener("click", () => {
   clearPage();
   createMenu();
   createFooter();
 });
-const homeBtn = document.getElementById("homeBtn");
-homeBtn.addEventListener("click", () => {
+
+const storyBtn = document.getElementById("storyBtn");
+storyBtn.addEventListener("click", () => {
   clearPage();
-  createHome();
+  createStory();
+  createFooter();
+});
+
+const ctcBtn = document.getElementById("ctcBtn");
+ctcBtn.addEventListener("click", () => {
+  clearPage();
+  createContact();
   createFooter();
 });
 

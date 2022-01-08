@@ -12,8 +12,8 @@ function createHeader() {
   left.appendChild(createLogo());
   right.appendChild(createBtn("Home", "homeBtn", "headerBtn"));
   right.appendChild(createBtn("Menu", "menuBtn", "headerBtn"));
-  right.appendChild(createBtn("Our Story", "ctcBtn", "headerBtn"));
-  right.appendChild(createBtn("Contact Us", "abtBtn", "headerBtn"));
+  right.appendChild(createBtn("Our Story", "storyBtn", "headerBtn"));
+  right.appendChild(createBtn("Contact Us", "ctcBtn", "headerBtn"));
 
 //   logo.addEventListener("mouseenter", () => {
 //       document.getElementById("logoText1").textContent = "GI";
