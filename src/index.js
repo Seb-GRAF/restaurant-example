@@ -1,6 +1,6 @@
 import "../styles/styles.scss";
 import createHeader from "./header";
-import { createCursor, cursorHover } from "./cursor";
+// import { createCursor, cursorHover } from "./cursor";
 import { createHome, wipeHome } from "./home";
 import { createMenu } from "./menu";
 import { createStory } from "./story";
@@ -45,14 +45,18 @@ ctcBtn.addEventListener("click", () => {
   createFooter();
 });
 
-document.querySelector("body").appendChild(createCursor());
-document.addEventListener("mousemove", (e) => cursorHover(e));
+const logo = document.getElementById("logo");
+logo.addEventListener("click", () => {
+  location.reload();
+});
+// document.querySelector("body").appendChild(createCursor());
+// document.addEventListener("mousemove", (e) => cursorHover(e));
 
-const cursor = document.getElementById("cursor");
-const map = document.getElementById("map");
-map.addEventListener("mouseenter", () => {
-  cursor.style.display = "none";
-});
-map.addEventListener("mouseleave", () => {
-  cursor.style.display = "";
-});
+// const cursor = document.getElementById("cursor");
+// const map = document.getElementById("map");
+// map.addEventListener("mouseenter", () => {
+//   cursor.style.display = "none";
+// });
+// map.addEventListener("mouseleave", () => {
+//   cursor.style.display = "";
+// });

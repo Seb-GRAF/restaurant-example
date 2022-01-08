@@ -3,10 +3,10 @@ import "../styles/menu.scss";
 import { items } from "./data/items";
 
 function createMenu() {
-  const content = document.getElementById("content");
   content.appendChild(createDiv("", "menu", ""));
-  menu.appendChild(createDiv("", "menuTitle", ""));
-  menu.appendChild(createDiv("", "menuContainer", ""));
+  menu.appendChild(createDiv("", "menu1", ""))
+  menu1.appendChild(createDiv("", "menuTitle", ""));
+  menu1.appendChild(createDiv("", "menuContainer", ""));
   menuTitle.textContent = "Our assortment of sushis";
 
   for (let i = 0; i < items.length; i++) {

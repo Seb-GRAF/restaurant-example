@@ -1,5 +1,5 @@
 #story {
-//   height: 100%;
+  //   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   .contentText {
   }
   #emptyDiv {
-    background-position: center;
+    background-position: center -250px;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -30,50 +30,73 @@
   }
   #story1 {
     margin: 2em;
-    background-color: #fcf6ed;
+    // background-color: #fcf6ed;
     height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    // gap: 3em;
     flex-wrap: wrap;
     #content1Main {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       width: 20em;
-      // gap: 2em;
+      margin: 2em;
+      #content1Text {
+        text-align: justify;
+      }
+      #content1Title {
+        text-align: center;
+      }
     }
-    #video1 {
+    #content1Video {
+      margin: 2em;
       border-radius: 0.3em;
       box-shadow: rgba(0, 0, 0, 0.418) 0 0 5px;
       height: 17em;
-      width: 30em;
+      max-width: 30em;
+      display: flex;
+      flex: 1 1 20em;
+      #video1 {
+        width: 100%;
+      }
     }
   }
   #story2 {
     width: 100%;
-    height: 50em;
-    background-color: #e77867;
+    height: auto;
+    background-color: #e77766;
     display: flex;
+    justify-content: space-evenly;
     #content2Image {
-      width: 70%;
+      width: 60%;
       height: 100%;
       background-position: center;
       background-size: cover;
-    //   background-attachment: fixed;
+      //   background-attachment: fixed;
       background-repeat: no-repeat;
     }
-    #content2Main{
-        padding: 1em;
-        width: 30%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+    #content2Main {
+      margin: 1em 0em;
+      padding: 1em;
+      min-width: 12em;
+      max-width: 25em;
+    //   height: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #content2Text {
+        text-align: justify;
+      }
+      #content2Title {
+        color: white;
+        text-align: center;
+      }
     }
   }
 }

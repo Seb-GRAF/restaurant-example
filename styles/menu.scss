@@ -1,13 +1,20 @@
 #menu {
-  margin: 0 30px;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #dfdfdf;
+  //   padding-left: calc(100vw - 100%);
+}
+#menu1{
+  width: 50em;
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-//   padding-left: calc(100vw - 100%);
+  
 }
 #menuTitle {
   display: flex;
@@ -15,9 +22,9 @@
   text-align: center;
   font-weight: 800;
   font-size: 3em;
-  margin: 0;
+  margin: 0.5em;
   height: 2.5em;
-  min-width: 8em;
+  min-width: 7em;
 }
 #menuContainer {
   display: flex;
@@ -27,7 +34,7 @@
   max-width: 50em;
   height: auto;
   gap: 1em;
-  margin: 1em;
+  // margin: 1em;
 }
 
 .menuItem {

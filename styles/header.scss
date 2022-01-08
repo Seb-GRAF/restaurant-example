@@ -1,13 +1,15 @@
 header {
+  width: 100%;
+  z-index: 1;
+}
+#headerMain {
   display: flex;
-  position: relative;
-  top: 0;
-  padding: 20px;
-  width: 90%;
+  padding: 15px 20px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: #ff9a8a solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.397) 0px 5px 10px;
 }
+
 #right {
   display: flex;
   gap: 20px;
@@ -28,7 +30,7 @@ header {
   margin: 0;
   line-height: 0.8em;
   transition: 0.2s;
-  cursor:none;
+  cursor:pointer;
   &:hover {
     border-color: #ff9a8a;
     color: #ff9a8a;
@@ -40,7 +42,7 @@ header {
   font-size: 1.1em;
   background: none;
   border: none;
-  cursor: none;
+  cursor: pointer;
   transition: 0.1s;
   text-decoration: underline 0.11em #00000000;
   display: inline-block;

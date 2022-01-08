@@ -2,12 +2,12 @@ import { createDiv, createImg, createBtn } from "./module";
 import "../styles/header.scss";
 
 function createHeader() {
-  const content = document.querySelector("#content");
+  
   const header = document.createElement("header");
   content.appendChild(header);
-
-  header.appendChild(createDiv("", "left"));
-  header.appendChild(createDiv("", "right"));
+  header.appendChild(createDiv("", "headerMain", ""))
+  headerMain.appendChild(createDiv("", "left"));
+  headerMain.appendChild(createDiv("", "right"));
 
   left.appendChild(createLogo());
   right.appendChild(createBtn("Home", "homeBtn", "headerBtn"));
